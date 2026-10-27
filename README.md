@@ -51,7 +51,7 @@ const [file] = await download("https://youtu.be/jNQXAC9IVRw", {
 const { url } = await uploadToVarg(file.path);
 ```
 
-## Logins (Instagram, Facebook, Threads, LinkedIn, Vimeo)
+## Logins (Facebook, Instagram, Threads, Reddit, LinkedIn, Vimeo)
 
 These sites often refuse anonymous downloads or rate-limit them. Pass `-c chrome` (or `firefox`, `safari`, `edge`, `brave`) to reuse the session from your browser, or pass `--cookies cookies.txt`. Cookies are read locally by yt-dlp and never leave your machine.
 

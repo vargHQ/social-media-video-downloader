@@ -32,7 +32,8 @@ async function installYtDlp(target: string): Promise<string> {
   const res = await fetch(`${RELEASES}/${releaseAsset()}`);
   if (!res.ok) throw new Error(`Failed to download yt-dlp: HTTP ${res.status}`);
   const tmp = `${target}.part`;
-  await Bun.write(tmp, res);
+  // Buffer first: Bun.write(path, Response) can stall forever on GitHub's redirected download.
+  await Bun.write(tmp, await res.arrayBuffer());
   await chmod(tmp, 0o755);
   await rename(tmp, target);
   return target;

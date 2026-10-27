@@ -18,7 +18,7 @@ export const PLATFORMS: Platform[] = [
   { id: "facebook", name: "Facebook", hosts: ["facebook.com", "fb.watch", "fb.com"], needsCookies: true },
   { id: "tiktok", name: "TikTok", hosts: ["tiktok.com"] },
   { id: "threads", name: "Threads", hosts: ["threads.net", "threads.com"], needsCookies: true },
-  { id: "reddit", name: "Reddit", hosts: ["reddit.com", "redd.it"] },
+  { id: "reddit", name: "Reddit", hosts: ["reddit.com", "redd.it"], needsCookies: true },
   { id: "vimeo", name: "Vimeo", hosts: ["vimeo.com"], needsCookies: true },
   { id: "linkedin", name: "LinkedIn", hosts: ["linkedin.com"], needsCookies: true },
   { id: "pinterest", name: "Pinterest", hosts: ["pinterest.com", "pin.it"] },
