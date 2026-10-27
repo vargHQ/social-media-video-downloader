@@ -1,0 +1,19 @@
+{
+  "name": "@vargai/video-downloader",
+  "version": "0.1.0",
+  "description": "Download videos from X, YouTube, Instagram, Facebook, TikTok and 1800+ sites, optionally straight into varg",
+  "type": "module",
+  "module": "src/index.ts",
+  "exports": { ".": "./src/index.ts" },
+  "bin": { "vdl": "src/cli.ts" },
+  "private": true,
+  "scripts": {
+    "vdl": "bun src/cli.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "^5.6.0"
+  }
+}
