@@ -1,12 +1,33 @@
 {
   "name": "@vargai/video-downloader",
   "version": "0.1.0",
-  "description": "Download videos from X, YouTube, Instagram, Facebook, TikTok and 1800+ sites, optionally straight into varg",
+  "description": "Social media video downloader: X (Twitter), YouTube, Instagram, TikTok, Facebook, Reddit and 1800+ sites. CLI + TypeScript library on yt-dlp.",
+  "keywords": [
+    "video-downloader",
+    "social-media-downloader",
+    "youtube-downloader",
+    "instagram-downloader",
+    "tiktok-downloader",
+    "twitter-video-downloader",
+    "facebook-video-downloader",
+    "yt-dlp",
+    "cli",
+    "bun"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/vargHQ/social-media-video-downloader#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vargHQ/social-media-video-downloader.git"
+  },
   "type": "module",
   "module": "src/index.ts",
-  "exports": { ".": "./src/index.ts" },
-  "bin": { "vdl": "src/cli.ts" },
-  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "bin": {
+    "vdl": "src/cli.ts"
+  },
   "scripts": {
     "vdl": "bun src/cli.ts",
     "test": "bun test",

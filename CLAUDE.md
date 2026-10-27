@@ -1,4 +1,4 @@
-# video-downloader
+# social-media-video-downloader
 
 `vdl`: a Bun CLI and library that downloads videos by URL (via yt-dlp) and can upload them to varg (`POST /v2/files`).
 

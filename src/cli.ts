@@ -5,7 +5,7 @@ import { detectPlatform, PLATFORMS } from "./platforms";
 import { resolveApiKey, uploadToVarg } from "./varg";
 import { hasFfmpeg, updateYtDlp } from "./ytdlp";
 
-const HELP = `vdl — download videos from X, YouTube, Instagram, Facebook, TikTok and 1800+ other sites
+const HELP = `vdl — social media video downloader: X, YouTube, Instagram, TikTok, Facebook and 1800+ sites
 
 Usage:
   vdl <url...> [options]       download (and optionally upload to varg)
